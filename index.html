@@ -12,6 +12,7 @@
         /* background-color: #282727; */
         /* font-family: 'Arial', sans-serif; */
         color: #F5F2F2;
+        background-color: #282727;
         /* changes text color */
         /* text-align: right; */
 
@@ -25,18 +26,18 @@
         letter-spacing: -0.015em;
         height: 33px;
       }
-      ul{
-        color: #F5F2F2;
-      }
     </style>
 
   </head>
   <body>
     <!-- header start -->
-      <div class="container-fluid border">
+      <div class="container-fluid border"
+           style = background-color:#F5F2F2;>
         <div class = "row">
-            <div class = "col-1"></div>
-            <div class = "col-4">
+            <div class = "col-1"
+                 style = background-color:#282727;></div>
+            <div class = "col-4"
+              style = background-color:#282727;>
               <ul class = "nav me-auto">
                 <li><a href="#" class="nav-link link-dark px-2 active" aria-current="page">Home</a></li>
                 <li><a href="#" class="nav-link link-dark px-2 active" aria-current="page">About Us</a></li>
@@ -71,9 +72,11 @@
               VolyaArt was created to provide support for victims of the war and to help promote Ukrainian artists and illustrators. You can participate in this mission by choosing art and a form you want to purchase it in. All proceeds go to support people of Ukraine.
             </p>
           </div>
-          <div class = "col-6 border">
+          <div class = "col-7 border"
+               style = background-color:#F5F2F2;>
               <img src = "images/ukrainian-photographer-maxim-dondyuk-105.jpg"
-                   alt = "VolyaArt"/>
+                   alt = "VolyaArt"
+                   class = "float-right"/>
           </div>
         </div>
       </div>
