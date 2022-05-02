@@ -8,14 +8,20 @@
 
     <style>
       #logo {
-        border: 1px solid red;
-        margin-left: -30px;
+        /* border: 1px solid red; */
+        margin-left: -80px;
       }
       #bottomInfo {
         background-image: url("images/julia-rekamie.png");
         height: 780px;
       }
-      div {border: 1px solid red; }
+      #transparent {
+        background: rgba(245, 242, 242, 0.5);
+      }
+      #transparentCol {
+        background: rgba(245, 242, 242, 0.5);
+      }
+      /* div {border: 1px solid red; } */
       body {
         /* background-color: #282727; */
         /* font-family: 'Arial', sans-serif; */
@@ -90,7 +96,7 @@
                style = background-color:#F5F2F2;>
               <img src = "images/ukrainian-photographer-maxim-dondyuk-105.jpg"
                    alt = "VolyaArt"
-                   class = "img-fluid float-end ms-4 mb-4" />
+                   class = "img-fluid float-end ms-4 mb-5 " />
           </div>
         </div>
       </div>
@@ -101,22 +107,22 @@
           <h4>Choose your art</h4>
         </div>
         <div class = "row">
-          <div class = "col-sm-6 col-md-3">
+          <div class = "col-sm-6 col-md-3 mb-4">
             <img src = "images/ctrl-z.jpg"
                  alt = "ctrl-z"
                  class = "img-fluid"/>
           </div>
-          <div class = "col-sm-6 col-md-3">
+          <div class = "col-sm-6 col-md-3 mb-4">
             <img src = "images/holding.jpg"
                  alt = "holding"
                  class = "img-fluid"/>
           </div>
-          <div class = "col-sm-6 col-md-3">
+          <div class = "col-sm-6 col-md-3 mb-4">
             <img src = "images/baby.jpg"
                  alt = "baby"
                  class = "img-fluid"/>
           </div>
-          <div class = "col-sm-6 col-md-3">
+          <div class = "col-sm-6 col-md-3 mb-4">
             <img src = "images/freedom.jpg"
                  alt = "freedom"
                  class = "img-fluid"/>
@@ -124,22 +130,22 @@
         </div>
         <!-- row 2 of images start -->
         <div class = "row">
-          <div class = "col-sm-6 col-md-3">
+          <div class = "col-sm-6 col-md-3 mb-4">
             <img src = "images/ballet.jpg"
                  alt = "balet"
                  class = "img-fluid"/>
           </div>
-          <div class = "col-sm-6 col-md-3">
+          <div class = "col-sm-6 col-md-3 mb-4">
             <img src = "images/broken.jpg"
                  alt = "broken"
                  class = "img-fluid"/>
           </div>
-          <div class = "col-sm-6 col-md-3">
+          <div class = "col-sm-6 col-md-3 mb-4">
             <img src = "images/giftForMom.jpg"
                  alt = "gift"
                  class = "img-fluid"/>
           </div>
-          <div class = "col-sm-6 col-md-3">
+          <div class = "col-sm-6 col-md-3 mb-4">
             <img src = "images/bucha.jpg"
                  alt = "bucha"
                  class = "img-fluid"/>
@@ -148,23 +154,24 @@
       </div>
       <!-- art container end -->
 
-      <div class="container-fluid border"
+      <div class="container-fluid border pt-5"
            id = "bottomInfo">
         <div class="row">
-          <div class="col-1 bg-opacity-5" style = background-color:#F5F2F2;></div>
-          <div class ="col-4 bg-opacity-5" style = background-color:#F5F2F2; >
-            <p style = color:#282727;>
+          <div class="col-1" id = "transparentCol" ></div>
+          <div class ="col-4" id = "transparent" >
+            <p style = "color: #282727";>
               Since February 24, 2022, more than 1300 missiles were fired into Ukrainian territory. Civillians lost their houses, their cities, and their loved ones. The country is in a desperate need of help. One of the ways yu can support victims of this war is by purchasing artwork. All proceeds go to help the refugees and victims of the war in Ukraine.
             </p>
-            <p style = color:#282727;>
+            <p style = "color: #282727";>
               We partnered with Ukrainian artists that create artwork inspired by current events and are willing to share their artwork for the best of their country. These illustrations are heartbreaking and powerful in documenting current pain all Ukrainians are going through.
             </p>
           </div>
+          <div class = "col-1" id = "transparentCol"></div>
         </div>
       </div>
 
       <!-- footer start-->
-      <div class = "container">
+      <div class = "container mt-4">
         <div class = "row">
           <div class = "col-3">
             <p>Volya Art, Inc
