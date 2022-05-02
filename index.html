@@ -7,6 +7,14 @@
     <link href = "css/styles.css" type = "text/css" rel="stylesheet">
 
     <style>
+      #logo {
+        border: 1px solid red;
+        margin-left: -30px;
+      }
+      #bottomInfo {
+        background-image: url("images/julia-rekamie.png");
+        height: 780px;
+      }
       div {border: 1px solid red; }
       body {
         /* background-color: #282727; */
@@ -24,11 +32,12 @@
         font-style: normal;
         line-height: 36px;
         letter-spacing: -0.015em;
-        height: 33px;
+
       }
         .nav-link.active {
           color: #F5F2F2;
         }
+
     </style>
 
   </head>
@@ -50,10 +59,12 @@
              </div>
              <div class = "col-6">
                <img src = "images/logo.png"
-                    alt = "VolyaArt"/>
+                    alt = "VolyaArt"
+                    id = "logo"/>
              </div>
              <div class = "col-1"
-               <a href="#" class=" px-2 active" aria-current="page" style = color: #282727;>
+                  style = color: #282727;>
+               <a href="#" class=" px-2 active" aria-current="page">
                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="45" class="bi bi-cart3" viewBox="0 0 16 16">
                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
                  </svg>
@@ -75,11 +86,11 @@
               VolyaArt was created to provide support for victims of the war and to help promote Ukrainian artists and illustrators. You can participate in this mission by choosing art and a form you want to purchase it in. All proceeds go to support people of Ukraine.
             </p>
           </div>
-          <div class = "col-7 border"
+          <div class = "col-7 border p-0"
                style = background-color:#F5F2F2;>
               <img src = "images/ukrainian-photographer-maxim-dondyuk-105.jpg"
                    alt = "VolyaArt"
-                   class = "float-right"/>
+                   class = "img-fluid float-end ms-4 mb-4" />
           </div>
         </div>
       </div>
@@ -137,12 +148,16 @@
       </div>
       <!-- art container end -->
 
-      <div class="container-fluid border">
+      <div class="container-fluid border"
+           id = "bottomInfo">
         <div class="row">
-          <div class="col-1"></div>
-          <div class ="col-5">
-            <p>
-              Since February 24, 2022, more than 1300 missiles were fired into Ukrianian territory. Civillians lost their houses, their cities, and their loved ones. The country is in a desperate need of help. One of the ways yu can support victims of this war is by purchasing artwork. All proceeds go to help the refugees and victims of the war in Ukraine.
+          <div class="col-1 bg-opacity-5" style = background-color:#F5F2F2;></div>
+          <div class ="col-4 bg-opacity-5" style = background-color:#F5F2F2; >
+            <p style = color:#282727;>
+              Since February 24, 2022, more than 1300 missiles were fired into Ukrainian territory. Civillians lost their houses, their cities, and their loved ones. The country is in a desperate need of help. One of the ways yu can support victims of this war is by purchasing artwork. All proceeds go to help the refugees and victims of the war in Ukraine.
+            </p>
+            <p style = color:#282727;>
+              We partnered with Ukrainian artists that create artwork inspired by current events and are willing to share their artwork for the best of their country. These illustrations are heartbreaking and powerful in documenting current pain all Ukrainians are going through.
             </p>
           </div>
         </div>
@@ -151,7 +166,7 @@
       <!-- footer start-->
       <div class = "container">
         <div class = "row">
-          <div class = "col-2">
+          <div class = "col-3">
             <p>Volya Art, Inc
             PO Box #34
             Sacramento, California</p>
@@ -160,8 +175,15 @@
             organization as described in Section
             501(c)(3) of the Internet Revenue Code</p>
             <!-- badges -->
+            <img src = "images/2019+ABN+Member+Badge.png"
+                 alt = "abn badge"
+                 class = "img-fluid"/>
+
+            <img src = "images/platinumseal-01.png"
+                 alt = "platinum seal"
+                 class = "img-fluid"/>
           </div>
-          <div class = "col-8"></div>
+          <div class = "col-7"></div>
           <div class = "col-2">
             <h6>Connect</h6>
             <p>
