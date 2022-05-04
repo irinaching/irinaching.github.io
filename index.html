@@ -44,6 +44,48 @@
           color: #F5F2F2;
       }
 
+      .box {
+          position: relative;
+          width: 100%;
+        }
+
+      .image {
+          opacity: 1;
+          display: block;
+          width: 100%;
+          height: auto;
+          transition: .5s ease;
+          backface-visibility: hidden;
+        }
+
+      .middle {
+          transition: .5s ease;
+          opacity: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          text-align: center;
+        }
+
+      .box:hover .image {
+          opacity: 0.5;
+        }
+
+      .box:hover .middle {
+          opacity: 1;
+        }
+
+      .text {
+          background-color: #282727;
+          color: #F5F2F2;
+          font-size: 16px;
+          padding: 16px 32px;
+          border-radius: 5px;
+        }
+
+
 
 
     </style>
@@ -51,7 +93,7 @@
   </head>
   <body>
     <!-- header start -->
-      <div class="container-fluid border"
+      <div class="container-fluid"
            style = background-color:#F5F2F2;>
         <div class = "row">
             <div class = "col-1"
@@ -94,7 +136,7 @@
               VolyaArt was created to provide support for victims of the war and to help promote Ukrainian artists and illustrators. You can participate in this mission by choosing art and a form you want to purchase it in. All proceeds go to support people of Ukraine.
             </p>
           </div>
-          <div class = "col-7 border p-0"
+          <div class = "col-7 p-0"
                style = background-color:#F5F2F2;>
               <img src = "images/ukrainian-photographer-maxim-dondyuk-105.jpg"
                    alt = "VolyaArt"
@@ -105,62 +147,112 @@
 
       <!-- art container start -->
       <div class = "container">
-        <div class = "row">
-          <h4>Choose your art</h4>
+        <div class = "row pb-3">
+          <h3 style = "color: #EDC700">Choose your art</h3>
         </div>
 
         <div class = "row">
           <div class = "col-sm-6 col-md-3 mb-4 " style = "cursor: pointer;">
-            <img src = "images/ctrl-z.jpg"
-                 alt = "ctrl-z"
-                 class = "img-fluid"/>
+
+
+            <div class="box">
+              <img src="images/ctrl-z.jpg" alt="ctrl-z" class="image img-fluid img-hover" style="width:100%">
+              <div class="middle">
+                <div class="text">Buy</div>
+              </div>
+            </div>
+            <!-- <img src = "images/ctrl-z.jpg" -->
+                 <!-- alt = "ctrl-z" -->
+                 <!-- class = "img-fluid img-hover"/> -->
           </div>
           <div class = "col-sm-6 col-md-3 mb-4" style = "cursor: pointer;">
-            <img src = "images/holding.jpg"
+            <div class="box">
+              <img src="images/holding.jpg" alt="holding" class="image img-fluid img-hover" style="width:100%">
+              <div class="middle">
+                <div class="text">Buy</div>
+              </div>
+            </div>
+            <!-- <img src = "images/holding.jpg"
                  alt = "holding"
-                 class = "img-fluid"/>
+                 class = "img-fluid"/> -->
           </div>
           <div class = "col-sm-6 col-md-3 mb-4" style = "cursor: pointer;">
-            <img src = "images/baby.jpg"
+            <div class="box">
+              <img src="images/baby.jpg" alt="baby" class="image img-fluid img-hover" style="width:100%">
+              <div class="middle">
+                <div class="text">Buy</div>
+              </div>
+            </div>
+            <!-- <img src = "images/baby.jpg"
                  alt = "baby"
-                 class = "img-fluid"/>
+                 class = "img-fluid"/> -->
           </div>
           <div class = "col-sm-6 col-md-3 mb-4" style = "cursor: pointer;">
-            <img src = "images/freedom.jpg"
+            <div class="box">
+              <img src="images/freedom.jpg" alt="freedom" class="image img-fluid img-hover" style="width:100%">
+              <div class="middle">
+                <div class="text">Buy</div>
+              </div>
+            </div>
+            <!-- <img src = "images/freedom.jpg"
                  alt = "freedom"
-                 class = "img-fluid"/>
+                 class = "img-fluid"/> -->
           </div>
         </div>
         <!-- row 2 of images start -->
         <div class = "row">
           <div class = "col-sm-6 col-md-3 mb-4" style = "cursor: pointer;">
-            <img src = "images/ballet.jpg"
+            <div class="box">
+              <img src="images/ballet.jpg" alt="ballet" class="image img-fluid img-hover" style="width:100%">
+              <div class="middle">
+                <div class="text">Buy</div>
+              </div>
+            </div>
+            <!-- <img src = "images/ballet.jpg"
                  alt = "balet"
-                 class = "img-fluid"/>
+                 class = "img-fluid"/> -->
           </div>
           <div class = "col-sm-6 col-md-3 mb-4" style = "cursor: pointer;">
-            <img src = "images/broken.jpg"
+            <div class="box">
+              <img src="images/broken.jpg" alt="broken" class="image img-fluid img-hover" style="width:100%">
+              <div class="middle">
+                <div class="text">Buy</div>
+              </div>
+            </div>
+            <!-- <img src = "images/broken.jpg"
                  alt = "broken"
-                 class = "img-fluid"/>
+                 class = "img-fluid"/> -->
           </div>
           <div class = "col-sm-6 col-md-3 mb-4" style = "cursor: pointer;">
             <a href = "purchase.html">
-              <img src = "images/giftForMom.jpg"
+              <div class="box">
+                <img src="images/giftForMom.jpg" alt="gift" class="image img-fluid img-hover" style="width:100%">
+                <div class="middle">
+                  <div class="text">Buy</div>
+                </div>
+              </div>
+              <!-- <img src = "images/giftForMom.jpg"
                    alt = "gift"
-                   class = "img-fluid"/>
+                   class = "img-fluid"/> -->
             </a>
 
           </div>
           <div class = "col-sm-6 col-md-3 mb-4" style = "cursor: pointer;">
-            <img src = "images/bucha.jpg"
+            <div class="box">
+              <img src="images/bucha.jpg" alt="bucha" class="image img-fluid img-hover" style="width:100%">
+              <div class="middle">
+                <div class="text">Buy</div>
+              </div>
+            </div>
+            <!-- <img src = "images/bucha.jpg"
                  alt = "bucha"
-                 class = "img-fluid"/>
+                 class = "img-fluid"/> -->
           </div>
         </div>
       </div>
       <!-- art container end -->
 
-      <div class="container-fluid border pt-5"
+      <div class="container-fluid pt-5"
            id = "bottomInfo">
         <div class="row">
           <div class="col-1" id = "transparentCol" ></div>
